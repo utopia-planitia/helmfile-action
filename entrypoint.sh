@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-helmfile --file="$1" --state-values-file="$2" --args=--post-renderer="$3" template
+helmfile --file="$1" --state-values-file="$2" template --args=--post-renderer="$3"
