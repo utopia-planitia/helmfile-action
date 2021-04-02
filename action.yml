@@ -1,0 +1,22 @@
+name: 'Helmfile validate'
+description: 'Render Helmfile templates'
+inputs:
+  helmfile:
+    description: 'Path of helmfile'
+    required: false
+    default: 'helmfile.yaml'
+  post-renderer:
+    description: 'Post renderer to apply'
+    required: false
+    default: ''
+  values:
+    description: 'Path of values file'
+    required: false
+    default: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.helmfile }}
+    - ${{ inputs.post-renderer }}
+    - ${{ inputs.values-file }}
