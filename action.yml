@@ -18,5 +18,5 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.helmfile }}
-    - ${{ inputs.values-file }}
+    - ${{ inputs.values }}
     - ${{ inputs.post-renderer }}
