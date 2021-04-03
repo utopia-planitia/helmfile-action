@@ -1,4 +1,4 @@
-FROM utopiaplanitia/helm-tools:latest
+FROM utopiaplanitia/helm-tools
 
 COPY entrypoint.sh /entrypoint.sh
 
