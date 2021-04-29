@@ -1,4 +1,4 @@
-FROM utopiaplanitia/helm-tools:v1.0.1@sha256:2d7902b8d2b0cf0613f163f0a1280b90c75c3eba5c045e054cd87b8bc23d07fd
+FROM utopiaplanitia/helm-tools:v1.0.2@sha256:9d077684fa8e1cf01e39bc357e3fba1fbaa50b3de6ea5d83d3fd1b0a0f18a45c
 
 COPY entrypoint.sh /entrypoint.sh
 
